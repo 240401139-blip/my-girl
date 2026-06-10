@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Sayang </title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="page active" id="page1">
+    <h1>🎂 Happy Birthday Sayang </h1>
+    <h2>17 juli 2004 ❤️</h2>
+
+    <button onclick="nextPage()">Mulai</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="page2">
+
+    <h1>💌 Pesan Untukmu</h1>
+
+    <div class="message-box">
+        <p id="typing"></p>
+    </div>
+
+    <button onclick="nextPage()">Next</button>
+
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="page3">
+
+    <h1 class="judul-memori">📸 Memori Kita ❤️</h1>
+
+    <div class="gallery-row">
+
+        <img src="foto1.jpg"
+             class="foto-kecil"
+             onclick="bukaAlbum(0)">
+
+        <img src="foto2.jpg"
+             class="foto-kecil"
+             onclick="bukaAlbum(1)">
+
+        <img src="foto3.jpg"
+             class="foto-kecil"
+             onclick="bukaAlbum(2)">
+
+    </div>
+
+    <button class="next-page-btn"
+            onclick="halamanCinta()">
+        Lanjut ❤️
+    </button>
+
+</div>
+
+<!-- POPUP -->
+
+<div id="popup" class="popup">
+
+    <div class="popup-content">
+
+        <span class="close"
+              onclick="tutupAlbum()">
+              ✖
+        </span>
+
+        <img id="popupFoto">
+
+        <p id="popupText"></p>
+
+        <div class="popup-buttons">
+
+            <button onclick="prevPopup()">
+                ⬅ Sebelumnya
+            </button>
+
+            <button onclick="nextPopup()">
+                Berikutnya ➡
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- PAGE 4 -->
+<div class="page" id="page4">
+
+    <h1 class="judul-memori">
+        💕 Alasan Aku Mencintaimu 💕
+    </h1>
+
+    <div class="love-card">
+
+        <p>❤️ Karena senyummu selalu membuat hariku lebih baik.</p>
+
+        <p>❤️ Karena kamu selalu mendukungku.</p>
+
+        <p>❤️ Karena bersamamu aku merasa lengkap.</p>
+
+        <p>❤️ Karena kamu adalah rumah bagiku.</p>
+
+    </div>
+
+    <button class="next-page-btn"
+            onclick="halamanSurat()">
+        Buka Surat Cinta 💌
+    </button>
+
+</div>
+
+<div class="page" id="page5">
+
+    <h1>💌 Surat Cinta</h1>
+
+    <div class="love-card">
+
+        <p>
+            Happy Birthday Sayang ❤️
+            <br><br>
+
+            Terima kasih sudah hadir dalam hidupku.
+            Semoga semua impianmu tercapai,
+            selalu sehat,
+            bahagia,
+            dan sukses.
+
+            <br><br>
+
+            Aku mencintaimu hari ini,
+            besok,
+            dan selamanya ❤️
+        </p>
+
+    </div>
+
+    <button onclick="nextPage()">
+        Lanjut 🎁
+    </button>
+
+</div>
+<!-- PAGE 6 -->
+<div class="page" id="page6">
+    <h1>🎁 Countdown</h1>
+
+    <div class="countdown">
+
+        <div>
+            <span id="days">0</span>
+            <small>Days</small>
+        </div>
+
+        <div>
+            <span id="hours">0</span>
+            <small>Hours</small>
+        </div>
+
+        <div>
+            <span id="minutes">0</span>
+            <small>Minutes</small>
+        </div>
+
+        <div>
+            <span id="seconds">0</span>
+            <small>Seconds</small>
+        </div>
+
+    </div>
+
+    <button onclick="nextPage()">Next</button>
+</div>
+
+<!-- PAGE 7 -->
+<div class="page" id="page7">
+
+    <div class="heart">❤️</div>
+
+    <h1>🎉 Surprise 🎉</h1>
+
+    <h2>Happy Birthday My Girl</h2>
+
+    <p>
+        Semoga semua impianmu tercapai,
+        selalu diberi kesehatan,
+        kebahagiaan,
+        dan kesuksesan.
+    </p>
+
+    <h1>❤️❤️❤️</h1>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
